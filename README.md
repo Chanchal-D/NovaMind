@@ -1,1 +1,1 @@
-# NovaMi
+# NovaMind
