@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <title>Mood Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./favicon.jpg">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <p center class="title">Mood Tracker</p>
+        <p center class="title">Select Day<br></p>
+        <select id="week" name="week" class="date">
+          <option value="mon" id="monday">Monday</option>
+          <option value="tues" id="tuesday">Tuesday</option>
+          <option value="wed" id="wednesday">Wednesday</option>
+          <option value="thur" id="thursday">Thursday</option>
+          <option value="fri" id="friday">Friday</option>
+          <option value="sat" id="saturday">Saturday</option>
+          <option value="sun" id="sunday">Sunday</option>
+        </select><br>
+        <b class="mood">
+          <button class="btn btn-primary mx-5 my-2" onclick="p1();">A</button>
+          <label for="mood1">Joyful, Happy, Relaxed, Great</label><br>
+    
+          <button class="btn btn-primary mx-5 my-2" onclick="p2();">B</button>
+          <label for="mood1">Productive, Active, Energetic, Motivated</label><br>
+    
+          <button class="btn btn-primary mx-5 my-2" onclick="p3();">C</button>
+          <label for="mood1">Average, Normal, Uneventful, Good</label><br>
+    
+          <button class="btn btn-primary mx-5 my-2" onclick="p4();">D</button>
+          <label for="mood1">Sick, Tired, Lazy, Dull, Unmotivated, Bored</label><br>
+    
+          <button class="btn btn-primary mx-5 my-2" onclick="p5();">E</button>
+          <label for="mood1">Sad, Lonely, Numb, Depressed, Insecure</label><br>
+    
+        </b>
+        <br><br>
+        <!-- <b>What should I do?</b> -->
+        <!-- <button id="button1" value="Submit" class="button mx-5" onclick="select()">Submit</button> -->
+    </div>
+
+  <div id="modalA" class="modal">
+    <p>Congratulations! If your day went well, consider taking some time for yourself, do something you enjoy, and celebrate your achievements.</p>
+    <button class="btn btn-primary" onclick="c1()">Close</button>
+  </div>
+
+  <div id="modalB" class="modal">
+    <p>Congratulations! If you are productive and energetic today try some mind refreshing 
+        sports or go out with your friends or you can spend the time with yourself</p>
+    <button class="btn btn-primary" onclick="c2()">Close</button>
+  </div>
+
+  <div id="modalC" class="modal">
+    <p>Good for You! If your day went well, consider taking some time for yourself, do something you enjoy, and celebrate your achievements.</p>
+    <button class="btn btn-primary" onclick="c3()">Close</button>
+  </div>
+
+  <div id="modalD" class="modal">
+    <p>Sorry! If your day did not go well , we can recommend you
+      to spend time with others that make you happy/cheerfull</p>
+    <button class="btn btn-primary" onclick="c4()">Close</button>
+  </div>
+
+  <div id="modalE" class="modal">
+    <p>Sorry! If your day didnt go well spend some time on your health
+      and your sleep . You can watch some youtube videos on standup comedy
+      we recommended below .</p>
+    <button class="btn btn-primary" onclick="c5()">Close</button>
+  </div>
+  <!-- <div>
+    <table id="table" class="tables">
+      <thead>
+        <tr>
+          <td class="white">Weekday</td>
+          <td class="white">Mood</td>
+        </tr>
+      </thead>
+    </table>
+  </div> -->
+
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
